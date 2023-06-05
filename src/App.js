@@ -1,7 +1,7 @@
 import React,{ Component} from "react";
 import DogList from "./DogList";
-import logo from "./logo.svg";
 import "./App.css";
+
 
 class App extends Component {
   constructor(props){
@@ -24,11 +24,11 @@ class App extends Component {
       <h1 style={{textAlign:"center"}}>
       Welcome to Dogz World 🐶
       </h1>
+      <button onClick={()=> window.location.reload(false)}> Click to Reload!</button>
+
       <DogList  dogs= {this.state.dogs}/>
       </div>
     );
   }
 }
-
-
 export default App;
